@@ -1,0 +1,182 @@
+@font-face {
+    /* definir como vamos a llamar a esta fuente de aquí en adelante */
+    font-family: roboto-parrafos;
+    /* define donde se encuentra el archivo de la fuente /url */
+    src: url('Roboto fonts/roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: roboto-encabezado;
+    src: url('roboto fonts/roboto/Roboto-Black.ttf');
+}
+
+/* html o :root */
+:root {
+    /* variable */
+    --color-home-navbar: rgb(255, 255, 255);
+    --color-bordes: 4px solid green;
+
+    --size-encabezados: 44px;
+}
+
+
+em{
+    display: flex;
+    font-size: 2em;
+    flex-wrap: wrap;
+    width: 50%;
+    background-color:aliceblue;
+}
+
+.servicios{
+    display: flex;
+    background-color: aliceblue;
+    width: 50%;
+    flex-direction: column;
+    
+}
+
+.logo-img{
+    width: 200px
+}
+
+.logo{
+    display: flex;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+nav{
+    background-color:rgb(255, 255, 255)
+}
+
+
+.header-container {
+    background-color: var(--color-home-navbar);
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 22px;
+    border-bottom: var(--color-bordes);
+    font-family: roboto-parrafos;
+    flex-wrap: wrap;
+
+    
+}
+
+.creditos{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.container-1{
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.container-1 a{
+    display: flex;
+    flex-wrap: wrap;    
+    color: rgb(53, 52, 52);
+    text-decoration: none;
+}
+
+.container-2{
+    width: 35%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.boton1{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(53, 52, 52);
+    text-decoration: none;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:30px;
+    padding-right:30px;
+    border-radius: var(--color-bordes);
+}
+
+.boton2{
+    display: flex;
+    flex-wrap: wrap;
+    color:#ffffff;
+    text-decoration: none;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:30px;
+    padding-right:30px;
+    background-color:#005BBB;
+}
+
+.back{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: aliceblue;
+
+}
+
+.otros-servicios{
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    align-content: center;
+}
+
+h1{
+    font-family: roboto-encabezado;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* unidades de medida */
+/* unidades absolutas son un tipo de medida fija que no cambia ni depende de otro factor. Son ideales cuando el contexto no varia*/
+
+p{
+    font-size: 18px;
+    
+}
+
+html {
+    border-bottom: 30px;
+    font-size: 18px; /* tamaño base - root */
+}
+
+a {
+    border-right:10px;
+    margin: 5px;
+    font-size: 1rem;
+    
+}
+
+.fixed {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+#rss {
+text-align: center;
+}
